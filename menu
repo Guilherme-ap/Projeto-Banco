@@ -1,0 +1,63 @@
+#include <math.h>
+#include <ctype.h>
+#include <string.h>
+void menu();
+
+
+void main(){
+
+char opcao;
+int n = 0, i;
+
+printf("Qual a quantidade de contas bancarias que serão gerenciadas:");
+    scanf("%d", &n);
+    if(n <= 0){
+        printf("Numero invalido, tente novamente");
+        system("pause");
+        exit(1);}
+
+    /*FILE *file;
+    file = fopen("menu.txt","r");
+    fclose(file);
+
+    if (file == NULL){
+        printf("Fodase");
+        system("pause");
+        exit(1);
+    }
+
+    char kaka[400]*/
+
+    for(i = 0; i <= n; i++){//deixar memoria dinamica
+
+    printf("Digite seu o nome do cliente %d:", i);
+        scanf("%s", &nome);
+    printf("Digite seu o id:");
+        scanf("%d", &id);
+    printf("Digite o tipo de conta:");
+        scanf("%d", &tipoConta);
+    printf("o seu saldo inicial é:", saldo);
+    while(1){
+
+
+    printf("Deseja adicionar saldo?");
+    printf("Y/N");
+
+    switch(opcao){
+
+        case 'Y'://caso o usuario queira colocar saldo
+            printf("Digite ");
+            break;
+        case 'N'://Usuario não quer adicionar saldo
+            printf;
+            system("pause");
+            exit(1);
+            break;
+        default:
+           continue;
+            }
+        }
+    }
+}
+
+
